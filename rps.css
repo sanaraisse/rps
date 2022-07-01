@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: aqua; */
+    background-image: url("https://www.xmple.com/wallpaper/linear-pink-gradient-blue-1920x1080-c2-c71585-00ffff-a-135-f-14.svg");
+    /* background-image: url("https://media.istockphoto.com/photos/bright-turquoise-blue-and-magenta-hand-painted-background-picture-id505329862?b=1&k=20&m=505329862&s=170667a&w=0&h=tTAIsaTIbtS5meagQ3VRX4vl-3apMg0L4PzAIPSL0Fg="); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+    /* background-color:rgb(164, 85, 112); */
+
+}
+
+.first {
+    font-size: 80px;
+    font-family: 'Stick No Bills', sans-serif;
+    letter-spacing: 10px;
+    z-index: 2;
+    /* display: none; */
+}
+
+.f {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding-top: 150px;
+    background-color: rgb(0, 0, 0, 0.5);
+    /* background-color: rgb(0,0,0,0); */
+    color: rgb(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
+}
+
+.how {
+    font-size: 100px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.way {
+    font-size: xx-large;
+}
+
+.second {
+    display: none;
+    z-index: 1;
+}
+
+.move {
+    transition-duration: 2s;
+    opacity: 0;
+}
+
+.play1 {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    background-color: rgb(230, 110, 216);
+    width: 460px;
+    height: 160px;
+    text-align: center;
+    padding-top: 60px;
+    border-radius: 20px;
+    color: aqua;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.play2 {
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    background-color: rgb(230, 110, 216);
+    width: 460px;
+    height: 160px;
+    text-align: center;
+    padding-top: 60px;
+    border-radius: 20px;
+    color: aqua;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.imgs1 {
+    display: flex;
+    position: absolute;
+    top: -180px;
+    justify-content: space-evenly;
+    width: 460px;
+    height: 30px;
+
+}
+
+.imgs1 div {
+    height: 240px;
+    width: 130px;
+    border-radius: 20px;
+    background-color: rgb(87, 42, 89);
+    /* pointer-events: none; */
+}
+
+img {
+    height: 240px;
+    width: 130px;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.mystyle {
+    opacity: 0;
+    transition-duration: 1s;
+    transform: rotateY(90deg);
+}
+
+.title {
+    font-size: x-large;
+}
+
+.btn {
+    height: 30px;
+    width: 100px;
+}
+
+.inp {
+    padding-top: -90px;
+    border-style: none;
+    z-index: 2;
+    width: 50px;
+    background-color: transparent;
+    border-bottom-style: solid;
+    border-color: rgb(8, 62, 212);
+    outline: 0px solid transparent;
+    text-align: center;
+    color: black
+}
+
+.name {
+    z-index: 2;
+    outline: 0px solid transparent;
+    font-family: 'Stick No Bills', sans-serif;
+    font-size: larger;
+    color: blue;
+}
+
+.check {
+    position: absolute;
+    bottom: 19%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 140px;
+    height: 40px;
+    border-radius: 15px;
+    background-image: linear-gradient(to bottom right ,aqua, rgba(78, 78, 243, 0.751),violet);
+    color: aliceblue;
+    border-color:rgb(255, 255, 255, 0.5);
+    font-size: xx-large;
+    font-family: 'Dancing Script', cursive;
+    border-style: solid;
+}
+.restart {
+    position: absolute;
+    bottom: 13%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 140px;
+    height: 40px;
+    border-radius: 15px;
+    /* background-color: blue; */
+    background-image: linear-gradient(to bottom right ,aqua, rgba(78, 78, 243, 0.751),violet);
+    color: aliceblue;
+    border-color:rgb(255, 255, 255, 0.5);
+    font-size: xx-large;
+    font-family: 'Dancing Script', cursive;
+    border-style: solid;
+} 
+[placeholder] {
+    width: 20%;
+    height: 50px;
+    text-align: center;
+    border-radius: 20px;
+    font-family: 'Stick No Bills', sans-serif;
+    border-style: none;
+    outline: 0px solid transparent;
+    font-size: x-large;
+
+}
+
+.checkclicked {
+    opacity: 0.5;
+}
+
+.win {
+    position: absolute;
+    height: fit-content;
+    color: black;
+    /* font-size: large; */
+    backdrop-filter: blur(3px);
+    font-family: 'Caveat', cursive;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    top: 5%;
+    /* font-size: 90px; */
+    display: none;
+    font-size: 30PX;
+}
+
+.war {
+    position: absolute;
+    height: 90px;
+    width: 100%;
+    backdrop-filter: blur(3px);
+    background-color: rgb(0, 0, 0, 0.6);
+    color: aliceblue;
+    top: 20%;
+    text-align: center;
+    font-size: xxx-large;
+    padding-top: 11px;
+    font-family: 'Caveat', cursive;
+    display: none;
+}
+
+.fade {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fadeOut {
+    opacity: 1;
+}
+
+.winner {
+    position: absolute;
+    height: fit-content;
+    width: 100%;
+    padding-top: 25px;
+    text-align: center;
+    font-size: 90px;
+    font-family: 'Stick No Bills', sans-serif;
+    display: none;
+}
+.back{
+    height: 80%;
+    width: 80%;
+    margin: 10%;
+    margin-top: 5%;
+    background-color: rgb(255, 255, 255,0.1 );
+    position: absolute;
+    z-index: -1;
+    border-radius: 40px;
+}
